@@ -1,0 +1,9 @@
+; pigeoncast.def : 
+
+LIBRARY      "pigeoncast.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

@@ -1,0 +1,51 @@
+// pigeoncast.idl : ActiveX Type Library.
+// pigeoncast.ocx ActiveX control based on Peercast for html embedding WMV streaming video.
+// M.Suzawa Grid Solutions Inc.
+// see http://www.peercast.org/ for further information.
+//
+
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(24183123-9083-4EDB-A472-4BC4BF4EF79E), version(1.0),
+  helpfile("pigeoncast.hlp"),
+  helpstring("pigeoncast ActiveX Control Module"),
+  control ]
+library pigeoncastLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CpigeoncastCtrl primary dispatch interfaces.
+
+	[ uuid(D8BC263B-D805-4C36-A9D3-381E4129194F),
+	  helpstring("pigeoncast Control dispatch interface.")]
+	dispinterface _Dpigeoncast
+	{
+		properties:
+		methods:
+	};
+
+	//  CpigeoncastCtrl event dispatch interfaces.
+
+	[ uuid(3A9ABC26-DD9A-42DD-8A8A-E8FF11B38458),
+	  helpstring("pigeoncast Control event dispatch interfaces.") ]
+	dispinterface _DpigeoncastEvents
+	{
+		properties:
+			//  no properties.
+
+		methods:
+	};
+
+	// CpigeoncastCtrl Class information.
+
+	[ uuid(88C9CFCF-362D-4DE4-929C-2245C38B5BB4),
+	  helpstring("pigeoncast Control"), control ]
+	coclass pigeoncast
+	{
+		[default] dispinterface _Dpigeoncast;
+		[default, source] dispinterface _DpigeoncastEvents;
+	};
+
+};
