@@ -2,7 +2,7 @@ Thanks for downloading PoppoCastTV project!
 poppocast is a product name. 'pigeoncast' is an internal name.
 pigeoncast.ocx ActiveX control based on Peercast for html embedding WMV streaming video.
 
-M.Suzawa <m.suzawa@gmail.com>  Grid Solutions Inc. http://www.gridsolutions.co.jp/
+M.Suzawa <m.suzawa@gmail.com> 
 
 
 This project is based on Peercast and it's compatible to Peercast WMV streaming.
